@@ -1,17 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jogo Da Velha</title>
+    <title>Jogo da Velha Da Danette</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="game=container">
-        <h1>Jogo Da Velha</h1>
+    <div class="game-container">
+        <h1>Jogo da Danette :)</h1>
         <div class="mode-selection">
             <button id="aiModeButton">Jogar Contra IA</button>
-            <button id="friendModeButton">Jogar Contra Amigo</button>            
+            <button id="friendModeButton">Jogar Contra Amigo</button>
+        </div>
+        <div class="scoreboard">
+            <div id="scoreX">X: 0</div>
+            <div id="scoreO">O: 0</div>
         </div>
         <div class="board" id="board">
             <div class="cell" data-cell></div>
@@ -24,6 +28,11 @@
             <div class="cell" data-cell></div>
             <div class="cell" data-cell></div>
         </div>
+        <button id="restartButton">Reiniciar Jogo</button>
+        <button id="resetScoreButton">Reiniciar Placar</button> <!-- Novo botão -->
+        <p id="message"></p>
     </div>
+
+    <script src="script.js"></script>
 </body>
 </html>

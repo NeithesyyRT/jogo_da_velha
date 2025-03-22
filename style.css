@@ -1,0 +1,133 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(45deg, #56bfe9, #f185f1);
+    background-size: 400% 400%;
+    animation: gradientAnimation 5s ease infinite;
+    font-family: Arial, sans-serif;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Centraliza o conteúdo no eixo vertical */
+    text-align: center;
+    background-color: rgba(135, 176, 223, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    gap: 10px;
+    margin-bottom: 20px;
+    justify-content: center;
+    /* Centraliza os quadrados horizontalmente */
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    cursor: pointer;
+}
+
+.cell:hover {
+    background-color: #e0e0e0;
+}
+
+#restartButton {
+    font-size: 1em;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#restartButton:hover {
+    background-color: #0056b3;
+}
+
+#resetScoreButton {
+    font-size: 1em;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+    /* Para adicionar algum espaçamento */
+}
+
+#resetScoreButton:hover {
+    background-color: #0056b3;
+}
+
+#message {
+    font-size: 1.2em;
+    margin-top: 20px;
+}
+
+.scoreboard {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+    font-weight: bold;
+    gap: 20px;
+    /* Adiciona um espaço entre os elementos do placar */
+}
+
+.mode-selection {
+    margin-bottom: 20px;
+}
+
+.mode-selection button {
+    font-size: 1em;
+    padding: 10px 20px;
+    margin: 0 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.mode-selection button:hover {
+    background-color: #0056b3;
+}
